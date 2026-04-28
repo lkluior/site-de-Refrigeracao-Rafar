@@ -65,7 +65,7 @@ function enviarWhats(event) {
   const telefone = document.querySelector('input[name="telefone"]').value;
   const mensagem = document.querySelector('textarea[name="mensagem"]').value;
 
-  const numero = "557998180358"; // 🔴 seu número
+  const numero = "5579996778713"; // 🔴 seu número
 
   const texto =
 `📋 *SOLICITAÇÃO DE ORÇAMENTO*

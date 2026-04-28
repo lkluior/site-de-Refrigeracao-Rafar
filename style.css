@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +9,7 @@
 body {
   background: #0f172a;
   color: white;
+  font-family: "Poppins", sans-serif;
 }
 
 /* HEADER */
@@ -310,3 +312,124 @@ footer {
 html {
   scroll-behavior: smooth;
 }
+.footer {
+  background: #020617;
+  color: white;
+  padding: 40px 20px 10px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.footer-col h3,
+.footer-col h4 {
+  margin-bottom: 15px;
+}
+
+.footer-col p,
+.footer-col a {
+  font-size: 14px;
+  color: #ccc;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.footer-col a:hover {
+  color: white;
+}
+
+/* botão whatsapp */
+.btn-whats {
+  display: inline-block;
+  background: #25d366;
+  padding: 10px 15px;
+  border-radius: 6px;
+  color: white !important;
+  margin-top: 10px;
+}
+
+/* linha final */
+.footer-bottom {
+  border-top: 1px solid #1e293b;
+  margin-top: 20px;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+}
+
+/* 📱 RESPONSIVO */
+@media (max-width: 900px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 430px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+}
+
+
+.descricao-servicos {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  color: #ccc;
+  font-size: 16px;
+}
+.galeria {
+  padding: 50px 20px;
+  background: #020617;
+  text-align: center;
+}
+
+.galeria h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.grid-galeria img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* efeito hover */
+.grid-galeria img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* 📱 RESPONSIVO */
+@media (max-width: 900px) {
+  .grid-galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 430px) {
+  .grid-galeria {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-galeria img {
+    height: 200px;
+  }
+}
+
