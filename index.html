@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Refrigeração Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Rafar Ar <img src="imgs/icone-ar-condicionado-vrf-300x300.png" width="20px" alt=""></h1>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section id="inicio" class="carousel">
+    <div class="carousel-track">
+
+      <div class="slide active">
+        <img src="imgs/fundo-linhas-01.jpeg">
+        <div class="overlay">
+          <h2>Instalação Profissional</h2>
+          <p>Ar-condicionado com qualidade e garantia</p>
+        </div>
+      </div>
+
+      <div class="slide">
+        <img src="imgs/CAPA_BLOG_2408_REFRIGERACAO-INDUSTRIAL.png">
+        <div class="overlay">
+          <h2>Manutenção Completa</h2>
+          <p>Evite problemas e economize energia</p>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!-- Botões -->
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+
+    <!-- Indicadores -->
+    <div class="dots"></div>
+  </section>
+
+  <section class="content">
+    <h2>Serviços de Refrigeração</h2>
+    <p>Instalação, manutenção e limpeza de ar-condicionado com qualidade profissional.</p>
+  </section>
+  <section id="servicos" class="servicos">
+  <h2>Nossos Serviços</h2>
+
+  <div class="cards-servicos">
+
+    <div class="card">
+      <h3>❄️ Instalação</h3>
+      <p>Instalação completa de ar-condicionado com segurança e garantia.</p>
+    </div>
+
+    <div class="card">
+      <h3>🛠️ Manutenção</h3>
+      <p>Manutenção preventiva e corretiva para evitar problemas futuros.</p>
+    </div>
+
+    <div class="card">
+      <h3>🧼 Higienização</h3>
+      <p>Limpeza completa eliminando bactérias e melhorando o ar.</p>
+    </div>
+
+    <div class="card">
+      <h3>🔧 Recarga de Gás</h3>
+      <p>Recarga e verificação de vazamentos com equipamento profissional.</p>
+    </div>
+
+  </div>
+</section>
+  <section id="contato" class="contato">
+    <h2>Entre em Contato</h2>
+
+    <div class="contato-container">
+
+      <form class="form-contato" onsubmit="enviarWhats(event)">
+        <input type="text" name="nome" placeholder="Seu nome" required>
+        <input type="tel" name="telefone" placeholder="Seu telefone" required>
+        <textarea name="mensagem" placeholder="Descreva o serviço" required></textarea>
+
+        <button type="submit">Chamar no WhatsApp</button>
+      </form>
+
+      <div class="info-contato">
+        <h3>Informações</h3>
+        <p>📞 55 79 9818-0358</p>
+        
+        <p> 🚀 Atendimento em toda região de Aracaju-se</p>
+
+        <a href="https://wa.me/557998180358" class="whatsapp-btn">Falar no WhatsApp</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Refrigeração Pro</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <a href="https://wa.me/557998180358" target="_blank" class="whatsapp-float">
+  💬
+</a>
+</body>
+
+</html>
