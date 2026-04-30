@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #0f172a;
+  background: #30446e;
   color: white;
   font-family: "Poppins", sans-serif;
 }
@@ -430,6 +430,48 @@ html {
 
   .grid-galeria img {
     height: 200px;
+  }
+}
+.localizacao {
+  background: linear-gradient(135deg, #0f172a, #020617);
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.local-box {
+  max-width: 700px;
+  text-align: center;
+  background: rgba(255,255,255,0.05);
+  padding: 40px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.local-box h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.local-box p {
+  color: #ccc;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+
+
+
+
+/* RESPONSIVO */
+@media (max-width: 430px) {
+  .local-box h2 {
+    font-size: 24px;
+  }
+
+  .local-box {
+    padding: 25px;
   }
 }
 
