@@ -496,3 +496,23 @@ nav a:hover {
   opacity: 0.7;
   font-size: 17px;
 }
+
+/* base */
+.animar {
+  opacity: 0;
+  transform: translateY(60px) scale(0.98);
+  transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* ativo */
+.animar.ativo {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* delay automático */
+.animar.delay-1 { transition-delay: 0.1s; }
+.animar.delay-2 { transition-delay: 0.2s; }
+.animar.delay-3 { transition-delay: 0.3s; }
+.animar.delay-4 { transition-delay: 0.4s; }
+.animar.delay-5 { transition-delay: 0.5s; }
