@@ -8,7 +8,7 @@
 }
 
 body {
-  background: #30446e;
+  background: #0d1627;
   color: white;
   font-family: "Poppins", sans-serif;
 }
@@ -516,3 +516,70 @@ nav a:hover {
 .animar.delay-3 { transition-delay: 0.3s; }
 .animar.delay-4 { transition-delay: 0.4s; }
 .animar.delay-5 { transition-delay: 0.5s; }
+
+.destaque-servico {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #11213a, #3a65a7);
+  color: #fff;
+  border-radius: 12px;
+  margin: 30px auto;
+  max-width: 1000px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* Título */
+.destaque-servico h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+/* Texto */
+.destaque-servico p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Botão WhatsApp */
+.btn-destaque {
+  display: inline-block;
+  background: #25D366;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-destaque:hover {
+  background: #1ebe5d;
+  transform: scale(1.05);
+}
+
+/* 📱 Responsivo */
+@media (max-width: 768px) {
+  .destaque-servico {
+    padding: 35px 15px;
+  }
+
+  .destaque-servico h2 {
+    font-size: 1.6rem;
+  }
+
+  .destaque-servico p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .destaque-servico h2 {
+    font-size: 1.4rem;
+  }
+
+  .destaque-servico p {
+    font-size: 0.95rem;
+  }
+}
