@@ -168,13 +168,14 @@ footer {
 
 .contato {
   padding: 40px 20px;
-  background: #020617;
+  background: #0a0e1d;
   text-align: center;
+  border-radius: 2px;
 }
 
 .contato h2 {
   margin-bottom: 30px;
-  font-size: 28px;
+  font-size: 29px;
 }
 
 .contato-container {
@@ -288,7 +289,7 @@ footer {
 }
 
 .card {
-  background: #020617;
+  background: #020618;
   padding: 25px;
   border-radius: 12px;
   transition: 0.3s;
@@ -435,7 +436,7 @@ html {
 /* 📱 RESPONSIVO */
 @media (max-width: 900px) {
   .grid-galeria {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -445,7 +446,10 @@ html {
   }
 
   .grid-galeria img {
-    height: 200px;
+    width: 100%;
+  aspect-ratio: 1 / 1; 
+  object-fit: cover;   
+  border-radius: 10px;
   }
 }
 
