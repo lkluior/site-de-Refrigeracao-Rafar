@@ -587,3 +587,8 @@ nav a:hover {
     font-size: 0.95rem;
   }
 }
+.grid-galeria img {
+  width: 100%;
+  height: 300px; 
+  object-fit: cover;
+}
