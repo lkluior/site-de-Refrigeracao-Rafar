@@ -592,3 +592,61 @@ nav a:hover {
   height: 300px; 
   object-fit: cover;
 }
+.galeria-scroll{
+    height:300vh;
+    position:relative;
+}
+
+.foto{
+    position:sticky;
+    top:120px;
+    height:60vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    perspective:1500px;
+}
+
+.foto img{
+    width:70%;
+    height:60vh;
+    object-fit:cover;
+
+    border-radius:30px;
+
+    box-shadow:
+        0 25px 80px rgba(0,0,0,.25);
+
+    transition:none;
+
+    will-change:
+        transform,
+        opacity,
+        filter;
+}
+@media(max-width:768px){
+
+ .foto{
+    position:sticky;
+    top:120px;
+    height:60vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+}
+.foto img{
+    width:85%;
+    max-width:1400px;
+    height:75vh;
+
+    object-fit:cover;
+
+    border-radius:30px;
+
+    box-shadow:
+        0 25px 80px rgba(0,0,0,.25);
+
+    will-change: transform;
+}

@@ -104,3 +104,29 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 elementos.forEach(el => observer.observe(el));
+
+const fotos = document.querySelectorAll(".foto");
+
+window.addEventListener("scroll", () => {
+
+    fotos.forEach((foto) => {
+
+        const rect = foto.getBoundingClientRect();
+
+        let progress = 1 - (rect.top / window.innerHeight);
+
+        progress = Math.max(0, Math.min(progress, 1));
+
+        const img = foto.querySelector("img");
+
+        const scale = 1 - (progress * 0.25);
+
+        const translateY = progress * 60;
+
+        img.style.transform = `
+            translateY(${translateY}px)
+            scale(${scale})
+        `;
+    });
+
+});
