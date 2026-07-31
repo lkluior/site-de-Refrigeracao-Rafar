@@ -8,8 +8,9 @@
 }
 
 body {
-  background: #0d1627;
   color: white;
+    margin: 0;
+    background: linear-gradient(to bottom, #0e1c2c, #1b263b);
   font-family: "Poppins", sans-serif;
 }
 
@@ -19,7 +20,11 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
-  background: #020617;
+  background: rgba(12, 17, 39, 0.9);
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
 }
 
 nav a {
@@ -36,6 +41,7 @@ nav a {
   max-height: 600px;
   min-height: 280px;
   overflow: hidden;
+
 }
 
 .carousel-track {
@@ -52,17 +58,17 @@ nav a {
 
 .slide img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* evita distorção */
+  height: 110%;
+  object-fit: contain;
+  
 }
 
 /* TEXTO SOBRE IMAGEM */
 .overlay {
   position: absolute;
-  bottom: 60px;
-  left: 30px;
-  background: rgba(0, 0, 0, 0.5);
+  bottom: 190px;
+  left: 280px;
+  background: rgba(0, 0, 0, 0.7);
   padding: 15px 20px;
   border-radius: 8px;
 }
@@ -167,8 +173,7 @@ footer {
 }
 
 .contato {
-  padding: 40px 20px;
-  background: #0a0e1d;
+  padding: 100px 20px;
   text-align: center;
   border-radius: 2px;
 }
@@ -274,7 +279,7 @@ footer {
 .servicos {
   padding: 50px 20px;
   text-align: center;
-  background: #0f172a;
+  
 }
 
 .servicos h2 {
@@ -307,9 +312,9 @@ footer {
 
 /* efeito hover */
 .card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-}
+} 
 
 /* 📱 RESPONSIVO */
 @media (max-width: 900px) {
@@ -403,7 +408,6 @@ html {
 
 .galeria {
   padding: 50px 20px;
-  background: #020617;
   text-align: center;
 }
 
@@ -414,7 +418,7 @@ html {
 
 .grid-galeria {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 15px;
 }
 
@@ -426,6 +430,8 @@ html {
   cursor: pointer;
   transition: 0.3s;
 }
+
+
 
 /* efeito hover */
 .grid-galeria img:hover {
@@ -593,8 +599,9 @@ nav a:hover {
   object-fit: cover;
 }
 .galeria-scroll{
-    height:300vh;
+    height:210vh;
     position:relative;
+    
 }
 
 .foto{
@@ -649,4 +656,114 @@ nav a:hover {
         0 25px 80px rgba(0,0,0,.25);
 
     will-change: transform;
+}
+ /* Camada da neve */
+.snow {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+/* Flocos */
+.snow span {
+    position: absolute;
+    top: -40px;
+    width: 14px;
+    height: 14px;
+    background: rgba(255,255,255,.9);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255,255,255,.7);
+    animation: snow linear infinite;
+}
+/* Distribuição */
+.snow span:nth-child(1){
+    left:5%;
+    width:18px;
+    height:18px;
+    animation-duration:12s;
+}
+
+.snow span:nth-child(2){
+    left:15%;
+    width:10px;
+    height:10px;
+    animation-duration:16s;
+}
+
+.snow span:nth-child(3){
+    left:28%;
+    width:20px;
+    height:20px;
+    animation-duration:11s;
+}
+
+.snow span:nth-child(4){
+    left:40%;
+    width:12px;
+    height:12px;
+    animation-duration:15s;
+}
+
+.snow span:nth-child(5){
+    left:52%;
+    width:22px;
+    height:22px;
+    animation-duration:13s;
+}
+
+.snow span:nth-child(6){
+    left:65%;
+    width:14px;
+    height:14px;
+    animation-duration:18s;
+}
+
+.snow span:nth-child(7){
+    left:75%;
+    width:24px;
+    height:24px;
+    animation-duration:14s;
+}
+
+.snow span:nth-child(8){
+    left:85%;
+    width:16px;
+    height:16px;
+    animation-duration:12s;
+}
+
+.snow span:nth-child(9){
+    left:92%;
+    width:20px;
+    height:20px;
+    animation-duration:17s;
+}
+
+.snow span:nth-child(10){
+    left:98%;
+    width:12px;
+    height:12px;
+    animation-duration:19s;
+}
+
+/* Animação */
+@keyframes snow {
+    0%{
+        transform: translateY(-20px) translateX(0);
+        opacity:0;
+    }
+
+    10%{
+        opacity:.8;
+    }
+
+    50%{
+        transform: translateY(50vh) translateX(20px);
+    }
+
+    100%{
+        transform: translateY(105vh) translateX(-20px);
+        opacity:0;
+    }
 }
